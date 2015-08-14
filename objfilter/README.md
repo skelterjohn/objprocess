@@ -151,6 +151,7 @@ $ objfilter --in=rjson --out=rjson '[E].z=2' '[].x=1' <<< '
 ]
 ```
 
+```
 () and (E) are like [] and [E], except for fields instead of indices
 $ objfilter --in=rjson '.().(E).z=1' <<< '
 {
@@ -179,3 +180,4 @@ $ objfilter --in=rjson '.().(E).z=1' <<< '
   },
  },
 }
+```
